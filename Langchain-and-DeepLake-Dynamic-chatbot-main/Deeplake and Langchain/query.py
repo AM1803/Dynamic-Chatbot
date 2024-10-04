@@ -12,7 +12,7 @@ os.environ['ACTIVELOOP_TOKEN'] = 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTY4NjU1ODk1MCwiZX
 embeddings = OpenAIEmbeddings(disallowed_special=())
 def Train():
     try:
-        root_dir = '/Users/wasiq/Desktop/OIPRO/proactive-intervention/app/src/main/java/com/intuit/v4/help/selfhelp/pais'
+        root_dir = '/Users/ankit/Desktop/OIPRO/proactive-intervention/app/src/main/java/com/intuit/v4/help/selfhelp/pais'
         docs = []
         for dirpath, dirnames, filenames in os.walk(root_dir):
             for file in filenames:
