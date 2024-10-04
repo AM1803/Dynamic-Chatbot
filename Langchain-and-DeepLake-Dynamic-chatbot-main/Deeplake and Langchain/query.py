@@ -23,7 +23,7 @@ def Train():
                     pass
         text_splitter = CharacterTextSplitter(chunk_size=4000, chunk_overlap=0)
         texts = text_splitter.split_documents(docs)
-        username = "wasiq"
+        username = "ankit"
         db = DeepLake(dataset_path=f"hub://{username}/intt", embedding_function=embeddings)#dataset would be publicly available
         db.add_documents(texts)
     except Exception as e:
